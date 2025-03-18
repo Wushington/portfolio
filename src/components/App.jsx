@@ -6,6 +6,6 @@ function App() {
       <h1>Hello World!</h1>
     </div>
     );
-}  // End of App component
+}
 
 export default App;
