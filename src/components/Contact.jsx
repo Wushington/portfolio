@@ -10,15 +10,21 @@ function Contact(props) {
         <ul>
           <li>
             Email:
-            <a href="mailto: jtzw21@gmail.com">Jtzw21@gmail.com</a>
+            <a href="mailto: jtzw21@gmail.com" target="_blank">
+              Jtzw21@gmail.com
+            </a>
           </li>
           <li>
             LinkedIn:
-            <a href="https://www.linkedin.com/in/wushington/">Wushington</a>
+            <a href="https://www.linkedin.com/in/wushington/" target="_blank">
+              Wushington
+            </a>
           </li>
           <li>
             GitHub:
-            <a href="https://github.com/Wushington">Wushington</a>
+            <a href="https://github.com/Wushington" target="_blank">
+              Wushington
+            </a>
           </li>
         </ul>
       </div>
