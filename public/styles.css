@@ -26,12 +26,20 @@ ul {
 .container {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0rem;
-  background-color: var(--color-eerie-black);
   width: 100%;
   padding-right: calc(var(--bs-gutter-x)* .5);
   padding-left: calc(var(--bs-gutter-x)* .5);
   margin-right: auto;
   margin-left: auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+  background-color: var(--color-eerie-black);
+}
+
+.home {
+  text-align: center;
 }
 
 .justify-content-center {
