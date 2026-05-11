@@ -11,7 +11,8 @@ function Content() {
 				<Route path="/" element={<Navigate to="/home" replace />} />
 				<Route path="/home" element={<Home />} />
 				<Route path="/projects" element={<Projects />} />
-				<Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/credits" element={<Credits />} />
 				<Route path="*" element={<div>Page not found</div>} />
 			</Routes>
 		</div>

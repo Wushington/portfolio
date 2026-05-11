@@ -212,3 +212,31 @@ section.content {
 	margin-top: 1rem;
 	opacity: 0.8;
 }
+
+.credits {
+	max-width: 900px;
+	margin: 0 auto 1.5rem;
+	padding: 0.35rem 0 0;
+	border-top: 1px solid #2a2a2a;
+	text-align: center;
+	opacity: 0.75;
+	font-size: 0.72rem;
+}
+
+.credits-line {
+	margin: 0;
+	line-height: 1.2;
+}
+
+.page-footer {
+	padding-bottom: 0.5rem;
+}
+
+.credits a {
+	color: var(--color-accent-1);
+	text-decoration: none;
+}
+
+.credits a:hover {
+	text-decoration: underline;
+}

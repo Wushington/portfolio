@@ -3,6 +3,7 @@ import NavItem from "./NavItem.jsx";
 import Home from "./Home.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
+import Credits from "./Credits.jsx";
 
 function App() {
 	return (
@@ -25,6 +26,9 @@ function App() {
 			<section id="contact" className="container content">
 				<Contact />
 			</section>
+			<footer className="container page-footer">
+				<Credits />
+			</footer>
 		</>
 	);
 }
