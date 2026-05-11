@@ -55,13 +55,13 @@ function Projects() {
 									GitHub
 								</a>
 							:	null}
-							{project.demoUrl ?
+							{project.liveURL ?
 								<a
-									href={project.demoUrl}
+									href={project.liveURL}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									Live Demo
+									View
 								</a>
 							:	null}
 						</div>
