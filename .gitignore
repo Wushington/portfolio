@@ -12,6 +12,16 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build and cache
+.vite/
+.eslintcache
+coverage/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +32,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Lock files (uncomment if you prefer not to commit them)
+package-lock.json
+yarn.lock
+
