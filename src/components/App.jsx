@@ -1,23 +1,32 @@
-import React from 'react'
+import React from "react";
 import NavItem from "./NavItem.jsx";
-import Content from "./Content.jsx";
+import Home from "./Home.jsx";
+import Projects from "./Projects.jsx";
+import Contact from "./Contact.jsx";
 
 function App() {
-  return (
-    <>
-      <div className="container header">
-        <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills">
-            <NavItem icon="" href="/home" active={1} text="Home" />
-            <NavItem icon="" href="/projects" active={0} text="Projects" />
-            {/* <NavItem icon="" href="/about" active={0} text="About" /> */}
-            <NavItem icon="" href="/contact" active={0} text="Contact" />
-          </ul>
-        </header>
-      </div>
-      <Content page="Home"></Content>
-    </>
-  );
+	return (
+		<>
+			<div className="container header">
+				<header className="d-flex justify-content-center py-3">
+					<ul className="nav nav-pills">
+						<NavItem icon="" href="#home" text="Home" />
+						<NavItem icon="" href="#projects" text="Projects" />
+						<NavItem icon="" href="#contact" text="Contact" />
+					</ul>
+				</header>
+			</div>
+			<section id="home" className="container content">
+				<Home />
+			</section>
+			<section id="projects" className="container content">
+				<Projects />
+			</section>
+			<section id="contact" className="container content">
+				<Contact />
+			</section>
+		</>
+	);
 }
 
-export default App
+export default App;
