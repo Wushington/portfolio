@@ -38,7 +38,7 @@ ul {
 	padding-left: calc(var(--bs-gutter-x) * 0.5);
 	margin-right: auto;
 	margin-left: auto;
-  text-align: center;
+	text-align: center;
 }
 
 section.content {
@@ -98,4 +98,117 @@ section.content {
 		color 0.15s ease-in-out,
 		background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out;
+}
+
+.projects {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.projects-subtitle {
+	opacity: 0.85;
+	margin-bottom: 1.25rem;
+}
+
+.project-types {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.6rem;
+	margin-bottom: 1.5rem;
+}
+
+.project-type-button {
+	background-color: var(--color-div-bg-black);
+	color: var(--color-text-light);
+	border: 1px solid #2a2a2a;
+	border-radius: 999px;
+	padding: 0.45rem 0.9rem;
+	cursor: pointer;
+	font: inherit;
+	transition:
+		background-color 0.15s ease,
+		border-color 0.15s ease,
+		transform 0.15s ease;
+}
+
+.project-type-button:hover {
+	border-color: var(--color-accent-1);
+	transform: translateY(-1px);
+}
+
+.project-type-button.is-selected {
+	background-color: var(--color-accent-1);
+	color: #0c1422;
+	border-color: var(--color-accent-1);
+	font-weight: 600;
+}
+
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 0.9rem;
+	text-align: left;
+}
+
+.project-card {
+	background: #131313;
+	border: 1px solid #222;
+	border-radius: 0.75rem;
+	padding: 1rem;
+}
+
+.project-card h2 {
+	font-size: 1.05rem;
+	margin: 0.35rem 0 0.55rem;
+}
+
+.project-card p {
+	margin: 0.35rem 0;
+	line-height: 1.35;
+}
+
+.project-card-type {
+	display: inline-block;
+	padding: 0.15rem 0.55rem;
+	border-radius: 999px;
+	background: #1f2937;
+	color: #bfdbfe;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.project-card-tech {
+	color: #b0b7c2;
+	font-size: 0.9rem;
+}
+
+.project-card-links {
+	display: flex;
+	gap: 0.55rem;
+	margin-top: 0.7rem;
+	flex-wrap: wrap;
+}
+
+.project-card-links a {
+	text-decoration: none;
+	padding: 0.35rem 0.65rem;
+	border: 1px solid #2a2a2a;
+	border-radius: 0.45rem;
+	color: var(--color-text-light);
+	font-size: 0.85rem;
+	background: #111;
+	transition:
+		border-color 0.15s ease,
+		background-color 0.15s ease;
+}
+
+.project-card-links a:hover {
+	border-color: var(--color-accent-1);
+	background-color: #1a1f2b;
+}
+
+.projects-empty {
+	margin-top: 1rem;
+	opacity: 0.8;
 }
