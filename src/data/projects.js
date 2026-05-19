@@ -1,6 +1,6 @@
 export const PROJECTS = [
 	{
-		title: "Roguelike RPG",
+		title: "Unnamed Roguelike RPG",
 		type: "Games",
 		description: "WIP",
 		tech: "Unreal Engine 5, C++",
@@ -8,7 +8,7 @@ export const PROJECTS = [
 		liveURL: null,
 	},
 	{
-		title: "Hive ",
+		title: "Hive",
 		type: "Mobile App",
 		description: "WIP",
 		tech: "React Native, Expo, Firebase",

@@ -11,7 +11,7 @@ function Projects() {
 	return (
 		<div className="projects">
 			<p className="section-kicker">selected work</p>
-			<h2>Projects</h2>
+			<h2>Personal Projects</h2>
 			<p className="projects-subtitle">Choose a type to filter projects.</p>
 
 			<div
