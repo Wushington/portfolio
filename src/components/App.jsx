@@ -50,9 +50,9 @@ function App() {
 					</nav>
 				</div>
 			</div>
-			<footer className="container page-footer">
-				{/* <Credits /> */}
-			</footer>
+			{/* <footer className="container page-footer">
+				<Credits />
+			</footer> */}
 		</>
 	);
 }

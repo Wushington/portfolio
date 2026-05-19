@@ -1,6 +1,10 @@
 import React from "react";
 import profileImage from "../assets/Jonathan_Wu-1.jpg";
-import { AiFillGithub, AiFillLinkedin, AiFillMail, AiOutlineDownload } from "react-icons/ai";
+import {
+	AiFillGithub,
+	AiFillLinkedin,
+	AiOutlineDownload,
+} from "react-icons/ai";
 
 function Profile() {
 	return (
@@ -12,10 +16,9 @@ function Profile() {
 					className="profile-image"
 				/>
 			</div>
-			<div className="profile-copy">
+			<div className="profile-content">
 				<h1>Jonathan Wu</h1>
 				<p className="profile-role">Developer</p>
-				<p className="profile-summary"></p>
 				<div className="social-icons">
 					<a
 						href="https://github.com/Wushington"
@@ -31,19 +34,22 @@ function Profile() {
 						rel="noopener noreferrer"
 						aria-label="LinkedIn"
 					>
-						<AiFillLinkedin className="icon-light" size={24} aria-hidden="true" />
-					</a>
-					<a href="mailto:jtzw21@gmail.com" aria-label="Email">
-						<AiFillMail className="icon-light" size={24} aria-hidden="true" />
+						<AiFillLinkedin
+							className="icon-light"
+							size={24}
+							aria-hidden="true"
+						/>
 					</a>
 				</div>
+				<p>Email: jtzw21@gmail.com</p>
+				<p>Phone: +1 (631)-637-0034</p>
 				<a
 					className="profile-button"
 					href="./Resume_Software.pdf"
 					download="jonathan_wu_resume.pdf"
 				>
-                    Resume
-                    <AiOutlineDownload className="icon-light" aria-hidden="true" />
+					Resume
+					<AiOutlineDownload className="icon-light" aria-hidden="true" />
 				</a>
 			</div>
 		</section>
