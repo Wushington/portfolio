@@ -36,4 +36,4 @@ function Credits({ credits = DEFAULT_CREDITS }) {
 	);
 }
 
-export default Credits;
+export default React.memo(Credits);

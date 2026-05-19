@@ -1,23 +1,17 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { PROJECTS, CATEGORY_ORDER } from "../data/projects.js";
 
 function Projects() {
 	const [selectedCategory, setSelectedCategory] = useState("All");
-	const [featuredOnly, setFeaturedOnly] = useState(false);
 
-	const filteredProjects = useMemo(() => {
-		return PROJECTS.filter((project) => {
-			const categoryMatch =
-				selectedCategory === "All" || project.type === selectedCategory;
-			const featuredMatch = !featuredOnly || project.featured;
-
-			return categoryMatch && featuredMatch;
-		});
-	}, [selectedCategory, featuredOnly]);
+	const filteredProjects = PROJECTS.filter((project) => {
+		return selectedCategory === "All" || project.type === selectedCategory;
+	});
 
 	return (
 		<div className="projects">
-			<h1>Projects</h1>
+			<p className="section-kicker">selected work</p>
+			<h2>Projects</h2>
 			<p className="projects-subtitle">Choose a type to filter projects.</p>
 
 			<div

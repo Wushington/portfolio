@@ -1,36 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import NavItem from "./NavItem.jsx";
-import Home from "./Home.jsx";
-import Projects from "./Projects.jsx";
-import Skills from "./Skills.jsx";
-import Contact from "./Contact.jsx";
+import Profile from "./Profile.jsx";
 import Credits from "./Credits.jsx";
+import Content from "./Content.jsx";
+
+const NAV_ITEMS = [
+	{ id: "about", label: "About" },
+	{ id: "projects", label: "Projects" },
+	{ id: "skills", label: "Skills" },
+];
 
 function App() {
+	const [active, setActive] = useState("about");
+
 	return (
 		<>
-			<div className="container header">
-				<header className="d-flex justify-content-center py-3">
-					<ul className="nav nav-pills">
-						<NavItem icon="" href="#home" text="Home" />
-						<NavItem icon="" href="#projects" text="Projects" />
-						<NavItem icon="" href="#skills" text="Skills" />
-						<NavItem icon="" href="#contact" text="Contact" />
-					</ul>
-				</header>
+			<div className="page-shell">
+				<div className="page-frame">
+					<aside className="profile-column">
+						<Profile />
+					</aside>
+					<main className="content-column">
+						<Content activeSection={active} />
+					</main>
+					<nav className="nav-rail" aria-label="Section navigation">
+						<ul className="nav-list">
+							<NavItem
+								key="about"
+								onClick={() => setActive("about")}
+								isActive={active === "about"}
+								label="About"
+								index={1}
+							/>
+							<NavItem
+								key="projects"
+								onClick={() => setActive("projects")}
+								isActive={active === "projects"}
+								label="Projects"
+								index={2}
+							/>
+							<NavItem
+								key="skills"
+								onClick={() => setActive("skills")}
+								isActive={active === "skills"}
+								label="Skills"
+								index={3}
+							/>
+						</ul>
+					</nav>
+				</div>
 			</div>
-			<section id="home" className="container content">
-				<Home />
-			</section>
-			<section id="projects" className="container content">
-				<Projects />
-			</section>
-			<section id="skills" className="container content">
-				<Skills />
-			</section>
-			<section id="contact" className="container content">
-				<Contact />
-			</section>
 			<footer className="container page-footer">
 				<Credits />
 			</footer>

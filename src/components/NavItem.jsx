@@ -1,14 +1,20 @@
 import React from "react";
 
-function NavItem(props) {
+function NavItem({ onClick, label, index, isActive = false }) {
 	return (
 		<li className="nav-item">
-			<i className={`nav-icon ${props.icon}`}></i>
-			<a href={props.href} className="nav-link">
-				{props.text}
-			</a>
+			<button
+				type="button"
+				className={`nav-link ${isActive ? "active" : ""}`}
+				onClick={onClick}
+				aria-pressed={isActive}
+				aria-label={label}
+			>
+				<span className="nav-index">0{index}</span>
+				<span className="nav-label">{label}</span>
+			</button>
 		</li>
 	);
 }
 
-export default NavItem;
+export default React.memo(NavItem);

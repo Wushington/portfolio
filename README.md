@@ -6,7 +6,6 @@ README will include attributions to borrowed icons/pictures and notes on some of
 
 Color | Hex
  :--- | ---:
-Cornflower Blue | #60a5fa
 Coral Red | #ef4444
 Warm Beige | #f5e8d8
 Soft Black | #1c1c1c

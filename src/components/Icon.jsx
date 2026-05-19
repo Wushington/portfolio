@@ -11,7 +11,7 @@ function Icon({ src, alt, size = "normal" }) {
 		<img
 			src={src}
 			alt={alt}
-			className="contact-icon"
+			className="icon"
 			style={{
 				width: sizeMap[size],
 				height: sizeMap[size],
