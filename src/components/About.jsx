@@ -1,12 +1,14 @@
 import React from "react";
 import { DiAtom } from "react-icons/di";
 
+import { AGE } from "../data/age.js";
+
 function About() {
 	return (
 		<div className="about">
 			<p className="section-kicker">about me</p>
-			<div className="hero-meta">24 years / New York, USA</div>
-			<h2 className="hero-title">No idea what to put here but it looks cool</h2>
+			<div className="hero-meta"> {AGE} years old / New York, USA</div>
+			<h2 className="hero-title">Welcome to my website!</h2>
 			<div className="about-copy">
 				<p>Describe what I do...</p>
 			</div>

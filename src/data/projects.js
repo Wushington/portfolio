@@ -19,10 +19,10 @@ export const PROJECTS = [
 		title: "Portfolio Site",
 		type: "Web Applications",
 		description:
-			"This is my personal portfolio website showcasing my projects and contact info.",
+			"This is my personal portfolio website: A hub showcasing my projects, contact info, and more.",
 		tech: "React, Vite, CSS",
-		githubUrl: "https://github.com/Wushington/Personal_Website",
-		liveURL: null,
+		githubUrl: "https://github.com/Wushington/portfolio/",
+		liveURL: "https://wushington.github.io/portfolio/",
 	},
 ];
 

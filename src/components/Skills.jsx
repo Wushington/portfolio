@@ -2,16 +2,41 @@ import React from "react";
 
 const SKILL_GROUPS = [
 	{
-		title: "Frontend",
-		items: ["React", "JavaScript", "CSS", "Responsive layouts"],
+		title: "Languages",
+		items: [
+			"Java",
+			"Python",
+			"C",
+			"C++",
+			"JavaScript",
+			"CSS",
+			"HTML",
+			"SQL",
+			"ARM Assembly",
+			"MIPS Assembly",
+			"OCaml",
+		],
 	},
 	{
-		title: "Workflow",
-		items: ["Vite", "Git", "Accessible UI", "Iteration"],
+		title: "Frameworks & Libraries",
+		items: [
+			"Scikit-learn",
+			"Hugging Face",
+			"React",
+			"Bootstrap",
+			"Node.js",
+			"Vite",
+			"React Native",
+			"Expo",
+		],
 	},
 	{
-		title: "Next up",
-		items: ["Motion", "Design polish", "Case studies", "CMS"],
+		title: "Video Game Development",
+		items: ["Unreal Engine"],
+	},
+	{
+		title: "Other Tools",
+		items: ["Git", "GitHub", "PostgreSQL", "Docker"],
 	},
 ];
 

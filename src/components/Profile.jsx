@@ -2,7 +2,8 @@ import React from "react";
 import profileImage from "../assets/Jonathan_Wu-1.jpg";
 import {
 	AiFillGithub,
-	AiFillLinkedin,
+    AiFillLinkedin,
+    AiFillMail,
 	AiOutlineDownload,
 } from "react-icons/ai";
 
@@ -39,10 +40,14 @@ function Profile() {
 							size={24}
 							aria-hidden="true"
 						/>
-					</a>
+                    </a>
+                    <a
+                        href="mailto:jtzw21@gmail.com"
+                        aria-label="Email"
+                    >
+                        <AiFillMail className="icon-light" size={24} aria-hidden="true" />
+                    </a>
 				</div>
-				<p>Email: jtzw21@gmail.com</p>
-				<p>Phone: +1 (631)-637-0034</p>
 				<a
 					className="profile-button"
 					href="./Resume_Software.pdf"
