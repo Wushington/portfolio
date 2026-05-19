@@ -1,34 +1,23 @@
 import React from "react";
+import { DiAtom } from "react-icons/di";
 
 function About() {
 	return (
 		<div className="about">
 			<p className="section-kicker">about me</p>
 			<div className="hero-meta">24 years / New York, USA</div>
-			<h2 className="hero-title">A rough red-and-black portfolio template.</h2>
+			<h2 className="hero-title">No idea what to put here but it looks cool</h2>
 			<div className="about-copy">
-				<p>
-					Prolific, full stack web developer with a passion for sharp visuals,
-					structured layouts, and clean, practical interfaces. This is the rough
-					template layer for the portfolio, designed to be customized later.
-				</p>
+				<p>Describe what I do...</p>
 			</div>
 			<div className="services-grid">
 				<article className="service-card">
-					<div className="service-icon">▢</div>
-					<h3>Development</h3>
-					<p>
-						Fast, custom builds for portfolio pages, product sites, and internal
-						tools.
-					</p>
-				</article>
-				<article className="service-card">
-					<div className="service-icon">↗</div>
-					<h3>Iteration</h3>
-					<p>
-						Placeholder structure that is easy to replace with your own copy and
-						visuals later.
-					</p>
+					<div className="service-icon">
+						{/* placeholder icon */}
+						<DiAtom size={32} />
+					</div>
+					<h3>Placeholder</h3>
+					<p>Placeholder</p>
 				</article>
 			</div>
 		</div>

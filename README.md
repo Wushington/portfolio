@@ -10,9 +10,3 @@ Coral Red | #ef4444
 Warm Beige | #f5e8d8
 Soft Black | #1c1c1c
 Flat Black | #0d0d0d
-
-## Icons
-
-### LinkedIn and Email
-
-Vecteezy: <https://www.vecteezy.com/>
