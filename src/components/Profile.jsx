@@ -1,6 +1,6 @@
 import React from "react";
 import profileImage from "../assets/Jonathan_Wu-1.jpg";
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillMail, AiOutlineDownload } from "react-icons/ai";
 
 function Profile() {
 	return (
@@ -15,7 +15,7 @@ function Profile() {
 			<div className="profile-copy">
 				<h1>Jonathan Wu</h1>
 				<p className="profile-role">Developer</p>
-				<p className="profile-summary">What I do...</p>
+				<p className="profile-summary"></p>
 				<div className="social-icons">
 					<a
 						href="https://github.com/Wushington"
@@ -42,7 +42,8 @@ function Profile() {
 					href="./Resume_Software.pdf"
 					download="jonathan_wu_resume.pdf"
 				>
-					Download Resume
+                    Resume
+                    <AiOutlineDownload className="icon-light" aria-hidden="true" />
 				</a>
 			</div>
 		</section>

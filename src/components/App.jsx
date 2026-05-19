@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavItem from "./NavItem.jsx";
 import Profile from "./Profile.jsx";
-import Credits from "./Credits.jsx";
+// import Credits from "./Credits.jsx";
 import Content from "./Content.jsx";
 
 const NAV_ITEMS = [
@@ -51,7 +51,7 @@ function App() {
 				</div>
 			</div>
 			<footer className="container page-footer">
-				<Credits />
+				{/* <Credits /> */}
 			</footer>
 		</>
 	);

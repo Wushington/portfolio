@@ -1,13 +1,6 @@
 import React from "react";
 
-const DEFAULT_CREDITS = [
-	{
-		prefix: "Logos from",
-		name: "Vecteezy",
-		href: "https://www.vecteezy.com/",
-		suffix: "used in certain project logos.",
-	},
-];
+const DEFAULT_CREDITS = [];
 
 function Credits({ credits = DEFAULT_CREDITS }) {
 	return (
