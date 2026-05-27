@@ -67,8 +67,7 @@ body,
 .content-panel,
 .panel,
 .profile-card {
-	scrollbar-width: thin;
-	scrollbar-color: var(--red-45) var(--color-surface);
+	scrollbar-color: var(--gray-09-95) var(--color-surface);
 }
 
 body::-webkit-scrollbar,
@@ -90,7 +89,7 @@ body::-webkit-scrollbar-track,
 body::-webkit-scrollbar-thumb,
 .content-panel::-webkit-scrollbar-thumb,
 .panel::-webkit-scrollbar-thumb {
-	background: linear-gradient(180deg, var(--red-70), var(--red-45));
+	background: linear-gradient(180deg, var(--gray-09-95), var(--gray-11));
 	border-radius: 10px;
 	border: 2px solid transparent;
 	background-clip: content-box;
@@ -98,7 +97,7 @@ body::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb:hover,
 .content-panel::-webkit-scrollbar-thumb:hover,
 .panel::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(180deg, var(--red-85), var(--red-55));
+	background: linear-gradient(180deg, var(--gray-11), var(--gray-0b));
 }
 
 @media (max-width: 640px) {
