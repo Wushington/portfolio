@@ -22,10 +22,10 @@ const SKILL_GROUPS = [
 		items: [
 			"Pandas",
 			"NumPy",
+			"Matplotlib",
 			"Scikit-learn",
 			"Hugging Face",
 			"React",
-			"Bootstrap",
 			"Node.js",
 			"Vite",
 			"React Native",
