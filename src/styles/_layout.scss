@@ -52,6 +52,7 @@
 	margin: 0 auto;
 	padding: 0.9rem 1rem;
 	border-radius: 18px;
+	background: var(--color-surface);
 	text-align: center;
 	font-size: 0.82rem;
 	color: var(--color-white-muted);
@@ -72,7 +73,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	background: linear-gradient(180deg, var(--gray-18-95), var(--gray-09-90));
+	background: var(--color-surface);
 }
 
 .nav-list {

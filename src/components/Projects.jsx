@@ -9,14 +9,14 @@ function Projects() {
 	});
 
 	return (
-		<div className="projects">
+		<div className="content">
 			<p className="section-kicker">selected works</p>
 			<h2>Personal Projects</h2>
-			<p className="projects-subtitle">
-				This is a collection of my personal projects which does not include
-				school or professional work
+			<p className="content-subtitle">
+				This collection of personal projects does not include school or
+				professional work
 			</p>
-
+			<span className="divider" />
 			<div
 				className="project-types"
 				role="tablist"
@@ -45,6 +45,7 @@ function Projects() {
 						<div className="project-card-links">
 							{project.githubUrl ?
 								<a
+									className="link"
 									href={project.githubUrl}
 									target="_blank"
 									rel="noopener noreferrer"
@@ -54,6 +55,7 @@ function Projects() {
 							:	null}
 							{project.liveURL ?
 								<a
+									className="link"
 									href={project.liveURL}
 									target="_blank"
 									rel="noopener noreferrer"

@@ -89,7 +89,7 @@ body::-webkit-scrollbar-track,
 body::-webkit-scrollbar-thumb,
 .content-panel::-webkit-scrollbar-thumb,
 .panel::-webkit-scrollbar-thumb {
-	background: linear-gradient(180deg, var(--gray-09-95), var(--gray-11));
+	background: var(--black-09);
 	border-radius: 10px;
 	border: 2px solid transparent;
 	background-clip: content-box;
@@ -97,7 +97,7 @@ body::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb:hover,
 .content-panel::-webkit-scrollbar-thumb:hover,
 .panel::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(180deg, var(--gray-11), var(--gray-0b));
+	background: var(--black-09);
 }
 
 @media (max-width: 640px) {

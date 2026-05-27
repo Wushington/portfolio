@@ -3,8 +3,8 @@ import { FaAws } from "react-icons/fa";
 
 const CERTIFICATES = [
 	{
-		name: "AWS Certified Solutions Architect - Associate",
-		type: "Amazon Web Services",
+		name: "Certificate Name",
+		type: "Type/Issuer",
 		badgeUrl: "https://www.credly.com/",
 		icon: FaAws,
 	},
@@ -12,13 +12,10 @@ const CERTIFICATES = [
 
 function Certificates() {
 	return (
-		<div className="certificates">
+		<div className="content">
 			<p className="section-kicker">certificates</p>
 			<h2>Certifications</h2>
-			<p className="certificates-subtitle">
-				Placeholder certification entries for now. Each card will eventually
-				link to the badge URL.
-			</p>
+			<span className="divider" />
 			<div className="certificate-grid">
 				{CERTIFICATES.map((certificate) => {
 					const CertificateIcon = certificate.icon;
@@ -35,7 +32,7 @@ function Certificates() {
 								</div>
 							</div>
 							<a
-								className="certificate-card-link"
+								className="link"
 								href={certificate.badgeUrl}
 								target="_blank"
 								rel="noopener noreferrer"

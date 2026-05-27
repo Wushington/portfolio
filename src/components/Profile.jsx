@@ -9,7 +9,7 @@ import {
 
 function Profile() {
 	return (
-		<section className="profile-card">
+		<section className="profile-panel">
 			<div className="profile-image-container">
 				<img
 					src={profileImage}

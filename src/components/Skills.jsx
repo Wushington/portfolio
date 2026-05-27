@@ -53,9 +53,10 @@ const SKILL_GROUPS = [
 
 function Skills() {
 	return (
-		<div className="skills">
+		<div className="content">
 			<p className="section-kicker">skills</p>
 			<h2>Technical Skills</h2>
+			<span className="divider" />
 			<div className="skill-grid">
 				{SKILL_GROUPS.map((group) => (
 					<article key={group.title} className="skill-group">
