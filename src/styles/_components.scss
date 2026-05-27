@@ -295,32 +295,6 @@ p,
 	opacity: 0.9;
 }
 
-/* services grid not currently used - commented out */
-/*
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-*/
-
-/* service-card specific rules commented out since services are unused */
-/*
-.service-card {
-  padding: 1rem 1rem 1.15rem;
-  border-radius: 22px;
-  background: var(--color-surface-soft);
-  border: 1px solid var(--color-border);
-}
-.service-icon {
-  font-size: 1.75rem;
-  font-weight: 800;
-  color: var(--color-accent);
-  margin-bottom: 0.85rem;
-}
-*/
-
 /* unified card styles for content-panel cards */
 .content {
 	display: flex;
@@ -334,6 +308,16 @@ p,
 	color: var(--color-white-muted);
 }
 
+.panel-card h3 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	line-height: 1.1;
+	color: var(--color-white);
+}
+
+// Project section styles
 .project-types {
 	display: flex;
 	flex-wrap: wrap;
@@ -380,44 +364,7 @@ p,
 	font-style: italic;
 }
 
-.certificate-grid {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	width: 100%;
-	gap: 1rem;
-}
-
-/* certificate-specific structural styles (content inside .panel-card) */
-.certificate-card-header {
-	display: flex;
-	gap: 0.9rem;
-	align-items: flex-start;
-}
-.certificate-icon-wrap {
-	color: var(--color-white);
-}
-.certificate-card-copy {
-	display: flex;
-	flex-direction: column;
-	gap: 0.3rem;
-	min-width: 0;
-}
-.certificate-card-type {
-	margin: 0;
-	font-size: 0.82rem;
-	font-weight: 700;
-	letter-spacing: 0.12em;
-	text-transform: uppercase;
-}
-.panel-card h3 {
-	margin: 0;
-	font-size: 1.2rem;
-	font-weight: 800;
-	letter-spacing: -0.02em;
-	line-height: 1.1;
-	color: var(--color-white);
-}
-
+// Skill section styles
 .skill-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -445,6 +392,7 @@ p,
 	color: var(--color-white);
 }
 
+// Contact section styles
 .contact-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -493,4 +441,65 @@ p,
 }
 .contact-card-value {
 	font-size: 0.92rem;
+}
+
+// Certificate-specific structural styles
+.certificate-card-header {
+	display: flex;
+	gap: 1rem;
+	align-items: stretch;
+	flex: 1 1 auto;
+}
+
+.certificate-icon-wrap {
+	color: var(--color-white);
+	min-width: 0;
+	width: 72px;
+	align-self: stretch;
+	display: grid;
+	place-items: center;
+	padding: 0.5rem;
+	border-radius: 18px;
+}
+
+.certificate-list .panel-card {
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.certificate-card-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.action-link {
+	margin-left: auto;
+	align-self: center;
+}
+
+.certificate-card-type {
+	margin: 0;
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.certificate-card-date {
+	margin: 0.25rem 0 0;
+	font-size: 0.9rem;
+	color: var(--color-white-muted);
+	font-weight: 600;
+}
+
+.certificate-icon {
+	width: auto;
+	height: 100%;
+	max-height: 100%;
+	display: block;
 }

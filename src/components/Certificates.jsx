@@ -1,14 +1,5 @@
 import React from "react";
-import { FaAws } from "react-icons/fa";
-
-const CERTIFICATES = [
-	{
-		name: "Certificate Name",
-		type: "Type/Issuer",
-		badgeUrl: "https://www.credly.com/",
-		icon: FaAws,
-	},
-];
+import CERTIFICATES from "../data/certificates.js";
 
 function Certificates() {
 	return (
@@ -16,7 +7,7 @@ function Certificates() {
 			<p className="section-kicker eyebrow">certificates</p>
 			<h2>Certifications</h2>
 			<span className="divider" />
-			<div className="certificate-grid">
+			<div className="certificate-list">
 				{CERTIFICATES.map((certificate) => {
 					const CertificateIcon = certificate.icon;
 
@@ -27,13 +18,23 @@ function Certificates() {
 									className="certificate-icon-wrap surface-icon"
 									aria-hidden="true"
 								>
-									<CertificateIcon size={28} />
+									<CertificateIcon className="certificate-icon" />
 								</div>
 								<div className="certificate-card-copy">
 									<p className="certificate-card-type eyebrow">
 										{certificate.type}
 									</p>
 									<h3>{certificate.name}</h3>
+									{certificate.dateAcquired ?
+										<p className="certificate-card-date">
+											Acquired{" "}
+											<time dateTime={certificate.dateAcquired}>
+												{new Date(
+													certificate.dateAcquired,
+												).toLocaleDateString()}
+											</time>
+										</p>
+									:	null}
 								</div>
 							</div>
 							<a
