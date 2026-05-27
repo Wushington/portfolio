@@ -8,19 +8,27 @@ function About() {
 		<div className="about">
 			<p className="section-kicker">about me</p>
 			<div className="hero-meta"> {AGE} years old / New York, USA</div>
-			<h2 className="hero-title">Welcome to my website! Still WIP</h2>
+			<h2 className="hero-title">Welcome to my website! WIP</h2>
 			<div className="about-copy">
 				<p>
-					Currently a student at SUNY University at Buffalo, I am majoring in
-					Computer Science and minoring in Mathematics. I am extremely
-					interested in software development and machine learning, and I am
-					always looking for opportunities to learn and grow in these fields. I
-					have experience with a variety of programming languages and
-					frameworks, and I am always eager to take on new challenges and expand
-					my skill set.
+					Hello and welcome to my website! A little about me: I am currently a
+					student at SUNY University at Buffalo majoring in Computer Science and
+					minoring in Mathematics. I am extremely interested in software
+					development and machine learning, and I am always looking for
+					opportunities to learn and grow in these fields. I have experience
+					with a variety of programming languages and frameworks, and I am
+					always eager to take on new challenges and expand my skill set.
 				</p>
-				<p></p>
+				<span className="about-divider" />
+				<p>
+					Outside of academics, I enjoy playing video games as much as I do
+					coding (which is a lot). My favorite franchine is Star Wars (movies,
+					TV shows, books, comics, games, etc.). I also enjoy watching movies
+					and TV shows in general, and I am always looking for recommendations,
+					but Star Wards will always be my number one.
+				</p>
 			</div>
+			<span className="about-divider" />
 			<div className="services-grid">
 				{/* placeholder service card */}
 				<article className="service-card">

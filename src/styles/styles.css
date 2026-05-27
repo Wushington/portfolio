@@ -418,6 +418,25 @@ p,
 .about-copy {
 	max-width: 58ch;
 	font-size: 1.02rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.about-divider {
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 0.2rem 0;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--red-45),
+		var(--red-18) 65%,
+		transparent
+	);
+	box-shadow: 0 0 18px rgba(239, 68, 68, 0.12);
+	opacity: 0.9;
 }
 
 .services-grid {
@@ -443,7 +462,8 @@ p,
 
 .projects,
 .skills,
-.contact {
+.contact,
+.certificates {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -537,6 +557,82 @@ p,
 }
 
 .project-card-links a:hover {
+	text-decoration: underline;
+}
+
+.certificates-subtitle {
+	max-width: 56ch;
+	margin-bottom: 0.25rem;
+}
+
+.certificate-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.certificate-card {
+	padding: 1.05rem;
+	border-radius: 22px;
+	background: var(--white-03);
+	border: 1px solid var(--white-08);
+	display: flex;
+	flex-direction: column;
+	gap: 0.95rem;
+}
+
+.certificate-card-header {
+	display: flex;
+	gap: 0.9rem;
+	align-items: flex-start;
+}
+
+.certificate-icon-wrap {
+	flex: 0 0 auto;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 16px;
+	display: grid;
+	place-items: center;
+	background: var(--red-08);
+	border: 1px solid var(--red-18);
+	color: var(--color-white);
+}
+
+.certificate-card-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	min-width: 0;
+}
+
+.certificate-card-type {
+	margin: 0;
+	color: var(--color-accent);
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.certificate-card h3 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	line-height: 1.1;
+	color: var(--color-white);
+}
+
+.certificate-card-link {
+	margin-top: auto;
+	align-self: flex-start;
+	color: var(--color-accent);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.certificate-card-link:hover {
 	text-decoration: underline;
 }
 
