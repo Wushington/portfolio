@@ -1,47 +1,57 @@
-/* Color tokens as CSS custom properties for runtime theming */
-:root {
-	--color-accent: rgb(239, 68, 68);
-	--color-accent-soft: rgba(239, 68, 68, 0.16);
+@use "sass:map";
 
-	/* Accent variants (red) */
-	--red-08: rgba(239, 68, 68, 0.08);
-	--red-12: rgba(239, 68, 68, 0.12);
-	--red-14: rgba(239, 68, 68, 0.14);
-	--red-18: rgba(239, 68, 68, 0.18);
-	--red-22: rgba(239, 68, 68, 0.22);
-	--red-28: rgba(239, 68, 68, 0.28);
-	--red-45: rgba(239, 68, 68, 0.45);
-	--red-55: rgba(239, 68, 68, 0.55);
-	--red-70: rgba(239, 68, 68, 0.7);
-	--red-85: rgba(239, 68, 68, 0.85);
+// Central color map for SCSS usage. Use `color($key)` to read values at
+// build time, and include `generate-css-vars()` once to emit runtime
+// custom properties so existing `var(--...)` references continue to work.
 
-	/* White / text color */
-	--color-white: #f7f2ea;
-	--color-white-muted: rgba(247, 242, 234, 0.72);
-	--white-03: rgba(247, 242, 234, 0.03);
-	--white-04: rgba(247, 242, 234, 0.04);
-	--white-08: rgba(247, 242, 234, 0.08);
-	--white-10: rgba(247, 242, 234, 0.1);
-
+$colors: (
+	color-accent: #ef4444,
+	color-accent-soft: rgba(239, 68, 68, 0.16),
+	/* Accent variants (red) */ red-08: rgba(239, 68, 68, 0.08),
+	red-12: rgba(239, 68, 68, 0.12),
+	red-14: rgba(239, 68, 68, 0.14),
+	red-18: rgba(239, 68, 68, 0.18),
+	red-22: rgba(239, 68, 68, 0.22),
+	red-28: rgba(239, 68, 68, 0.28),
+	red-45: rgba(239, 68, 68, 0.45),
+	red-55: rgba(239, 68, 68, 0.55),
+	red-70: rgba(239, 68, 68, 0.7),
+	red-85: rgba(239, 68, 68, 0.85),
+	/* White / text color */ color-white: #f7f2ea,
+	color-white-muted: rgba(247, 242, 234, 0.72),
+	white-03: rgba(247, 242, 234, 0.03),
+	white-04: rgba(247, 242, 234, 0.04),
+	white-08: rgba(247, 242, 234, 0.08),
+	white-10: rgba(247, 242, 234, 0.1),
 	/* Black / neutral variants used for surfaces, shadows and overlays */
-	--black-18: rgba(0, 0, 0, 0.18);
-	--black-35: rgba(0, 0, 0, 0.35);
-	--black-45: rgba(0, 0, 0, 0.45);
-
+	black-18: rgba(0, 0, 0, 0.18),
+	black-35: rgba(0, 0, 0, 0.35),
+	black-45: rgba(0, 0, 0, 0.45),
 	/* Dark greys used in gradients and panels */
-	--gray-22-95: rgba(22, 22, 22, 0.95);
-	--gray-18-95: rgba(18, 18, 18, 0.95);
-	--gray-16-93: rgba(16, 16, 16, 0.93);
-	--gray-11-95: rgba(11, 11, 11, 0.95);
-	--gray-10-95: rgba(10, 10, 10, 0.95);
-	--gray-09-95: rgba(9, 9, 9, 0.95);
-	--gray-09-90: rgba(9, 9, 9, 0.9);
-	--black-09: #090909;
-	--gray-11: #111111;
-	--gray-0b: #0b0b0b;
+	gray-22-95: rgba(22, 22, 22, 0.95),
+	gray-18-95: rgba(18, 18, 18, 0.95),
+	gray-16-93: rgba(16, 16, 16, 0.93),
+	gray-11-95: rgba(11, 11, 11, 0.95),
+	gray-10-95: rgba(10, 10, 10, 0.95),
+	gray-09-95: rgba(9, 9, 9, 0.95),
+	gray-09-90: rgba(9, 9, 9, 0.9),
+	black-09: #090909,
+	gray-11: #111111,
+	gray-0b: #0b0b0b,
 
-	/* Surface + utilities */
-	--color-surface: rgba(12, 12, 12, 0.86);
-	--color-surface-strong: rgba(18, 18, 18, 0.96);
-	--color-border: var(--white-08);
+	/* Surface + utilities */ color-surface: rgba(12, 12, 12, 0.86),
+	color-surface-strong: rgba(18, 18, 18, 0.96),
+	color-border: rgba(247, 242, 234, 0.08),
+);
+
+@function color($key) {
+	@return map.get($colors, $key);
+}
+
+@mixin generate-css-vars() {
+	:root {
+		@each $name, $value in $colors {
+			--#{$name}: #{$value};
+		}
+	}
 }
