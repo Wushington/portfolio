@@ -15,10 +15,11 @@ const SKILL_GROUPS = [
 			"ARM Assembly",
 			"MIPS Assembly",
 			"OCaml",
+			"PowerShell",
 		],
 	},
 	{
-		title: "Frequently Used Libraries & Frameworks",
+		title: "Libraries & Frameworks",
 		items: [
 			"Pandas",
 			"NumPy",
@@ -33,12 +34,20 @@ const SKILL_GROUPS = [
 		],
 	},
 	{
-		title: "Video Game Development",
-		items: ["Unreal Engine"],
+		title: "Other Tools",
+		items: [
+			"Git",
+			"GitHub",
+			"GitHub Desktop",
+			"PostgreSQL",
+			"Docker",
+			"VS Code",
+			"Cursor",
+		],
 	},
 	{
-		title: "Other Tools",
-		items: ["Git", "GitHub", "PostgreSQL", "Docker"],
+		title: "Video Game Development",
+		items: ["Unreal Engine"],
 	},
 ];
 
