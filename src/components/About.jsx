@@ -24,11 +24,10 @@ function About() {
 					Outside of academics, I enjoy playing video games as much as I do
 					coding (which is a lot). My favorite franchine is Star Wars (movies,
 					TV shows, books, comics, games, etc.). I also enjoy watching movies
-					and TV shows in general, and I am always looking for recommendations,
-					but Star Wards will always be my number one.
+					and TV shows in general, and I am always looking for recommendations.
 				</p>
+				<span className="about-divider" />
 			</div>
-			<span className="about-divider" />
 			<div className="services-grid">
 				{/* placeholder service card */}
 				<article className="service-card">
