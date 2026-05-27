@@ -55,7 +55,7 @@ function Skills() {
 	return (
 		<div className="content">
 			<p className="section-kicker">skills</p>
-			<h2>Technical Skills</h2>
+			<h2>Technical skills</h2>
 			<span className="divider" />
 			<div className="skill-grid">
 				{SKILL_GROUPS.map((group) => (

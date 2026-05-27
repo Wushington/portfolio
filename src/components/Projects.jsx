@@ -11,7 +11,7 @@ function Projects() {
 	return (
 		<div className="content">
 			<p className="section-kicker">selected works</p>
-			<h2>Personal Projects</h2>
+			<h2>Personal projects</h2>
 			<p className="content-subtitle">
 				This collection of personal projects does not include school or
 				professional work
