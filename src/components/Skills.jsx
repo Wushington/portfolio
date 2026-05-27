@@ -18,8 +18,10 @@ const SKILL_GROUPS = [
 		],
 	},
 	{
-		title: "Frameworks & Libraries",
+		title: "Frequently Used Libraries & Frameworks",
 		items: [
+			"Pandas",
+			"NumPy",
 			"Scikit-learn",
 			"Hugging Face",
 			"React",
