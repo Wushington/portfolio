@@ -12,7 +12,7 @@ function Projects() {
 		<div className="projects">
 			<p className="section-kicker">selected work</p>
 			<h2>Personal Projects</h2>
-			<p className="projects-subtitle">Choose a type to filter projects.</p>
+			<p className="projects-subtitle">This is a collection of my personal projects which does not include school or professional work</p>
 
 			<div
 				className="project-types"

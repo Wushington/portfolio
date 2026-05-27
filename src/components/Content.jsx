@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Skills from "./Skills.jsx";
+import Certificates from "./Certificates.jsx";
 
 function Content({ activeSection = "about" }) {
 	return (
@@ -19,6 +20,11 @@ function Content({ activeSection = "about" }) {
 			{activeSection === "skills" && (
 				<section id="skills" className="panel section-panel">
 					<Skills />
+				</section>
+			)}
+			{activeSection === "certificates" && (
+				<section id="certificates" className="panel section-panel">
+					<Certificates />
 				</section>
 			)}
 			{/* contact section removed - contact info moved to profile */}

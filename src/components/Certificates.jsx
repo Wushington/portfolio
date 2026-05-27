@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 
 function Certificates() {
     return (
@@ -10,15 +10,9 @@ function Certificates() {
                     <h3>Certificate Name</h3>
                     <p>Issuing Organization - Date</p>
                 </li>
-                <li>
-                    <h3>Certificate Name</h3>
-                    <p>Issuing Organization - Date</p>
-                </li>
-                <li>
-                    <h3>Certificate Name</h3>
-                    <p>Issuing Organization - Date</p>
-                </li>
             </ul>
         </div>
     );
 }
+
+export default React.memo(Certificates);

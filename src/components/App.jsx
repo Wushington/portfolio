@@ -8,6 +8,7 @@ const NAV_ITEMS = [
 	{ id: "about", label: "About" },
 	{ id: "projects", label: "Projects" },
 	{ id: "skills", label: "Skills" },
+	{ id: "certificates", label: "Certificates" }
 ];
 
 function App() {
@@ -45,6 +46,13 @@ function App() {
 								isActive={active === "skills"}
 								label="Skills"
 								index={3}
+							/>
+							<NavItem
+								key="certificates"
+								onClick={() => setActive("certificates")}
+								isActive={active === "certificates"}
+								label="Certificates"
+								index={4}
 							/>
 						</ul>
 					</nav>

@@ -19,7 +19,7 @@ function Profile() {
 			</div>
 			<div className="profile-content">
 				<h1>Jonathan Wu</h1>
-				<p className="profile-role">Developer</p>
+				<p className="profile-role">Student / Developer</p>
 				<div className="social-icons">
 					<a
 						href="https://github.com/Wushington"
