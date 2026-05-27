@@ -9,27 +9,42 @@ function Content({ activeSection = "about" }) {
 	return (
 		<div className="content-panel">
 			{activeSection === "about" && (
-				<section id="about" className="panel hero-panel">
+				<section
+					id="about"
+					className="panel surface-panel surface-panel--content hero-panel"
+				>
 					<About />
 				</section>
 			)}
 			{activeSection === "projects" && (
-				<section id="projects" className="panel section-panel">
+				<section
+					id="projects"
+					className="panel surface-panel surface-panel--content"
+				>
 					<Projects />
 				</section>
 			)}
 			{activeSection === "skills" && (
-				<section id="skills" className="panel section-panel">
+				<section
+					id="skills"
+					className="panel surface-panel surface-panel--content"
+				>
 					<Skills />
 				</section>
 			)}
 			{activeSection === "certificates" && (
-				<section id="certificates" className="panel section-panel">
+				<section
+					id="certificates"
+					className="panel surface-panel surface-panel--content"
+				>
 					<Certificates />
 				</section>
 			)}
 			{activeSection === "feedback" && (
-				<section id="feedback" className="panel section-panel">
+				<section
+					id="feedback"
+					className="panel surface-panel surface-panel--content"
+				>
 					<Feedback />
 				</section>
 			)}

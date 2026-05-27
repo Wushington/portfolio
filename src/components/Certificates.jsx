@@ -13,7 +13,7 @@ const CERTIFICATES = [
 function Certificates() {
 	return (
 		<div className="content">
-			<p className="section-kicker">certificates</p>
+			<p className="section-kicker eyebrow">certificates</p>
 			<h2>Certifications</h2>
 			<span className="divider" />
 			<div className="certificate-grid">
@@ -21,18 +21,23 @@ function Certificates() {
 					const CertificateIcon = certificate.icon;
 
 					return (
-						<article className="certificate-card" key={certificate.name}>
+						<article className="panel-card surface-card" key={certificate.name}>
 							<div className="certificate-card-header">
-								<div className="certificate-icon-wrap" aria-hidden="true">
+								<div
+									className="certificate-icon-wrap surface-icon"
+									aria-hidden="true"
+								>
 									<CertificateIcon size={28} />
 								</div>
 								<div className="certificate-card-copy">
-									<p className="certificate-card-type">{certificate.type}</p>
+									<p className="certificate-card-type eyebrow">
+										{certificate.type}
+									</p>
 									<h3>{certificate.name}</h3>
 								</div>
 							</div>
 							<a
-								className="link"
+								className="link action-link"
 								href={certificate.badgeUrl}
 								target="_blank"
 								rel="noopener noreferrer"

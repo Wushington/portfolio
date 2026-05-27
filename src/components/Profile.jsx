@@ -2,14 +2,14 @@ import React from "react";
 import profileImage from "../assets/Jonathan_Wu-1.jpg";
 import {
 	AiFillGithub,
-    AiFillLinkedin,
-    AiFillMail,
+	AiFillLinkedin,
+	AiFillMail,
 	AiOutlineDownload,
 } from "react-icons/ai";
 
 function Profile() {
 	return (
-		<section className="profile-panel">
+		<section className="profile-panel surface-panel surface-panel--profile">
 			<div className="profile-image-container">
 				<img
 					src={profileImage}
@@ -19,9 +19,10 @@ function Profile() {
 			</div>
 			<div className="profile-content">
 				<h1>Jonathan Wu</h1>
-				<p className="profile-role">Student / Developer</p>
+				<p className="profile-role eyebrow">Student / Developer</p>
 				<div className="social-icons">
 					<a
+						className="action-button action-button--icon"
 						href="https://github.com/Wushington"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -30,6 +31,7 @@ function Profile() {
 						<AiFillGithub className="icon-light" size={24} aria-hidden="true" />
 					</a>
 					<a
+						className="action-button action-button--icon"
 						href="https://www.linkedin.com/in/wushington/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -40,16 +42,17 @@ function Profile() {
 							size={24}
 							aria-hidden="true"
 						/>
-                    </a>
-                    <a
-                        href="mailto:jtzw21@gmail.com"
-                        aria-label="Email"
-                    >
-                        <AiFillMail className="icon-light" size={24} aria-hidden="true" />
-                    </a>
+					</a>
+					<a
+						className="action-button action-button--icon"
+						href="mailto:jtzw21@gmail.com"
+						aria-label="Email"
+					>
+						<AiFillMail className="icon-light" size={24} aria-hidden="true" />
+					</a>
 				</div>
 				<a
-					className="profile-button"
+					className="profile-button action-button action-button--solid"
 					href="./Resume_Software.pdf"
 					download="jonathan_wu_resume.pdf"
 				>

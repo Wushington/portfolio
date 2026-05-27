@@ -10,7 +10,7 @@ function Projects() {
 
 	return (
 		<div className="content">
-			<p className="section-kicker">selected works</p>
+			<p className="section-kicker eyebrow">selected works</p>
 			<h2>Personal projects</h2>
 			<p className="content-subtitle">
 				This collection of personal projects does not include school or
@@ -26,7 +26,7 @@ function Projects() {
 					<button
 						key={category}
 						type="button"
-						className={`project-type-button ${selectedCategory === category ? "is-selected" : ""}`}
+						className={`project-type-button action-button action-button--chip ${selectedCategory === category ? "is-selected" : ""}`}
 						onClick={() => setSelectedCategory(category)}
 						aria-pressed={selectedCategory === category}
 					>
@@ -37,15 +37,15 @@ function Projects() {
 
 			<div className="project-grid">
 				{filteredProjects.map((project) => (
-					<article className="project-card" key={project.title}>
-						<p className="project-card-type">{project.type}</p>
+					<article className="panel-card surface-card" key={project.title}>
+						<p className="project-card-type eyebrow">{project.type}</p>
 						<h2>{project.title}</h2>
 						<p>{project.description}</p>
 						<p className="project-card-tech">{project.tech}</p>
 						<div className="project-card-links">
 							{project.githubUrl ?
 								<a
-									className="link"
+									className="link action-link"
 									href={project.githubUrl}
 									target="_blank"
 									rel="noopener noreferrer"
@@ -55,7 +55,7 @@ function Projects() {
 							:	null}
 							{project.liveURL ?
 								<a
-									className="link"
+									className="link action-link"
 									href={project.liveURL}
 									target="_blank"
 									rel="noopener noreferrer"

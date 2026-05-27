@@ -65,8 +65,8 @@ body::after {
 html,
 body,
 .content-panel,
-.panel,
-.profile-card {
+.surface-panel,
+.panel {
 	scrollbar-color: var(--gray-09-95) var(--color-surface);
 }
 

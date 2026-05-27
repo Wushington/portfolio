@@ -25,7 +25,10 @@ function App() {
 					<main className="content-column">
 						<Content activeSection={active} />
 					</main>
-					<nav className="nav-rail" aria-label="Section navigation">
+					<nav
+						className="nav-rail surface-panel surface-panel--rail"
+						aria-label="Section navigation"
+					>
 						<ul className="nav-list">
 							<NavItem
 								key="about"

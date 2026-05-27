@@ -6,8 +6,8 @@ import { AGE } from "../data/age.js";
 function About() {
 	return (
 		<div className="about">
-			<p className="section-kicker">about me</p>
-			<div className="hero-meta"> {AGE} years old / New York, USA</div>
+			<p className="section-kicker eyebrow">about me</p>
+			<div className="hero-meta eyebrow"> {AGE} years old / New York, USA</div>
 			<h2 className="hero-title">Welcome to my website! WIP</h2>
 			<div className="bio">
 				<span className="divider" />

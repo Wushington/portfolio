@@ -5,7 +5,7 @@ function NavItem({ onClick, label, index, isActive = false }) {
 		<li className="nav-item">
 			<button
 				type="button"
-				className={`nav-link ${isActive ? "active" : ""}`}
+				className={`nav-link action-button action-button--nav ${isActive ? "is-active" : ""}`}
 				onClick={onClick}
 				aria-pressed={isActive}
 				aria-label={label}

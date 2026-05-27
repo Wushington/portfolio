@@ -3,7 +3,7 @@ import React from "react";
 function Feedback() {
 	return (
 		<div className="content">
-			<p className="section-kicker">feedback</p>
+			<p className="section-kicker eyebrow">feedback</p>
 			<h2>Leave a comment</h2>
 			<p className="content-subtitle">
 				I would love to hear your feedback on my website! If you have any
