@@ -1,3 +1,7 @@
+@use "./colors" as colors;
+
+@include colors.generate-css-vars();
+
 /* Base/reset + global utilities */
 *,
 *::before,
@@ -9,10 +13,6 @@ html {
 	scroll-behavior: smooth;
 	height: 100%;
 }
-
-@use "./colors" as colors;
-
-@include colors.generate-css-vars();
 
 body {
 	margin: 0;
