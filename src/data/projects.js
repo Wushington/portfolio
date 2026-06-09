@@ -24,6 +24,17 @@ export const PROJECTS = [
 		githubUrl: "https://github.com/Wushington/portfolio/",
 		liveURL: "https://wushington.github.io/portfolio/",
 	},
+	{
+		title: "Simple Learning Management System",
+		type: "Websites",
+		description:
+			"This is my personal portfolio website: A hub showcasing my projects, contact info, and more.",
+		tech: "JavaScript, React, Vite, Django, Django REST Framework",
+		githubUrl:
+			"https://github.com/Wushington/Simple_Learning_Management_System_LMS",
+		liveURL:
+			"https://wushington.github.io/Simple_Learning_Management_System_LMS/",
+	},
 ];
 
 export const CATEGORY_ORDER = [
