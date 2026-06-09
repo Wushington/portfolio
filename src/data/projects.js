@@ -28,7 +28,7 @@ export const PROJECTS = [
 		title: "Simple Learning Management System",
 		type: "Websites",
 		description:
-			"This is my personal portfolio website: A hub showcasing my projects, contact info, and more.",
+			"A small full-stack LMS project built to practice Django REST Framework, role-based API behavior, and a React frontend that can store rich lesson content as JSON. Allow users to create accounts based on two roles (student and instructor). Instructors create courses, chapters, and chapter content, while students can enroll in courses and view chapter content",
 		tech: "JavaScript, React, Vite, Django, Django REST Framework",
 		githubUrl:
 			"https://github.com/Wushington/Simple_Learning_Management_System_LMS",
